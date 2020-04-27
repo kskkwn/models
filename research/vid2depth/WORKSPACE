@@ -92,8 +92,8 @@ new_http_archive(
 # HDF5
 new_http_archive(
     name = "hdf5",
-    url = "https://support.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.10.1.tar.gz",
-    strip_prefix = "hdf5-1.10.1",
+    url = "https://support.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.10.5.tar.gz",
+    strip_prefix = "hdf5-1.10.5",
     build_file = "third_party/hdf5.BUILD",
 )
 

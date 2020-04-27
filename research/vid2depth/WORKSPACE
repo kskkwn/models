@@ -68,16 +68,16 @@ http_archive(
 )
 
 # Point Cloud Library (PCL)
-#new_http_archive(
-#    name = "com_github_pointcloudlibrary_pcl",
-#    build_file = "//third_party:pcl.BUILD",
-#    sha256 = "5a102a2fbe2ba77c775bf92c4a5d2e3d8170be53a68c3a76cfc72434ff7b9783",
-#    strip_prefix = "pcl-pcl-1.8.1",
-#    urls = [
-#        "https://mirror.bazel.build/github.com/PointCloudLibrary/pcl/archive/pcl-1.8.1.tar.gz",
-#        "https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.1.tar.gz",
-#    ],
-#)
+new_http_archive(
+    name = "com_github_pointcloudlibrary_pcl",
+    build_file = "//third_party:pcl.BUILD",
+    sha256 = "5a102a2fbe2ba77c775bf92c4a5d2e3d8170be53a68c3a76cfc72434ff7b9783",
+    strip_prefix = "pcl-pcl-1.8.1",
+    urls = [
+        "https://mirror.bazel.build/github.com/PointCloudLibrary/pcl/archive/pcl-1.8.1.tar.gz",
+        "https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.1.tar.gz",
+    ],
+)
 
 # FLANN
 new_http_archive(
